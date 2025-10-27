@@ -37,6 +37,13 @@ docker logs -f oracle-db
 ```
 - When you see that log line the DB is up and ready.
 
+#### Enter inside the container and connect with oracle database
+
+```bash
+docker exec -it oracle-db /bin/bash
+sqlplus system/YourStrongPassword123@//localhost:1521/FREEPDB1
+```
+
 #### How to reset SYS user password:
 Enter your oracle docker container, then:
 ```bash
@@ -44,10 +51,3 @@ sqlplus / as sysdba
 ALTER USER SYS IDENTIFIED BY MyNewPass123;
 ```
 ---
-
-#### Enter inside the container and connect with oracle database
-
-```bash
-docker exec -it oracle-db /bin/bash
-sqlplus system/YourStrongPassword123@//localhost:1521/FREEPDB1
-```
