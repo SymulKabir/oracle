@@ -5,16 +5,187 @@
 select * from tab;
 ```
 
-#### Show all item from table;
+#### Select everything from a table:
 ```sql
-select * from <table-name>;
+SELECT * FROM branch;
+SELECT * FROM customer;
+SELECT * FROM account;
+SELECT * FROM loan;
+SELECT * FROM depositor;
+SELECT * FROM borrower;
 ```
 
-#### Show `CUSTOMER_NAME` item from table;
+#### Select specific columns:
 ```sql
-select customer_name from depositor;
+SELECT branch_name, assets FROM branch;
+SELECT customer_name, customer_city FROM customer;
+SELECT account_number, balance FROM account;
 ```
-#### Show `CUSTOMER_NAME` and `ACCOUNT_NU` items from table;
+
+#### WHERE clause (filtering):
 ```sql
-select customer_name, account_nu from depositor;
+SELECT * FROM branch WHERE branch_city = 'Brooklyn';
+SELECT * FROM customer WHERE customer_city = 'Rye';
+SELECT * FROM account WHERE balance > 700;
+```
+
+#### ORDER BY (sorting):
+```sql
+SELECT * FROM customer ORDER BY customer_name ASC;
+SELECT * FROM account ORDER BY balance DESC;
+
+```
+
+#### DISTINCT (remove duplicates):
+```sql
+SELECT DISTINCT branch_city FROM branch;
+SELECT DISTINCT customer_city FROM customer;
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
+```
+#### 
+```sql
+
 ```
