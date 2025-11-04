@@ -15,6 +15,22 @@ SELECT * FROM depositor;
 SELECT * FROM borrower;
 ```
 
+#### Set width for columns:
+```sql
+COLUMN branch_name FORMAT A15;
+COLUMN customer_name  FORMAT A25;
+```
+Now run your query:
+```sql
+SELECT * FROM branch;
+```
+
+#### You can also set page size and line size for better formatting:
+```sql
+SET PAGESIZE 50
+SET LINESIZE 80
+```
+
 #### Select specific columns:
 ```sql
 SELECT branch_name, assets FROM branch;
